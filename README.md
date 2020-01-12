@@ -15,3 +15,4 @@
   - cd nominatim && docker build -t nominatim .
   - docker run -t -v /your/path/to/the/propstat/repo/data/nominatim:/data nominatim sh /app/init.sh /data/greater-london-latest.osm.pbf postgresdata 4
   - docker run --restart=always -p 6432:5432 -p 7070:8080 -d --name nominatim -v /data/nominatim/postgresdata:/var/lib/postgresql/11/main nominatim bash /app/start.sh
+  - This will get Nominatim to run exposing those 2 ports. 6432 for Postgres and 7070 for a web interface.
