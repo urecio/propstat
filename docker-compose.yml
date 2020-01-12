@@ -1,0 +1,15 @@
+version: '3.0'
+services:
+  db:
+    image: kartoza/postgis:12.0
+    volumes:
+      - ./data:/data
+    environment:
+      - POSTGRES_DB=propstat
+      - POSTGRES_USER=propstat
+      - POSTGRES_PASS=password
+      - ALLOW_IP_RANGE=0.0.0.0/0
+      - POSTGRES_MULTIPLE_EXTENSIONS=postgis,hstore,postgis_topology
+    ports:
+      - 5432:5432
+    restart: always
