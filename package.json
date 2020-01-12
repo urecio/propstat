@@ -1,0 +1,20 @@
+{
+  "name": "propstat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/urecio/propstat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/urecio/propstat/issues"
+  },
+  "homepage": "https://github.com/urecio/propstat#readme"
+}
