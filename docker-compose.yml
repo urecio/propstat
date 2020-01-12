@@ -13,3 +13,15 @@ services:
     ports:
       - 5432:5432
     restart: always
+  convert_data:
+    image: osgeo/gdal
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - ./data:/data
+      - ./add-flood-data.sh:/add-flood-data.sh
+    command: bash add-flood-data.sh
+
+  
