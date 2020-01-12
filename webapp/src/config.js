@@ -8,8 +8,12 @@ const config = {
     isBrowser: typeof window !== 'undefined',
   },
   test: {},
-  development: {},
-  production: {},
+  development: {
+    apiUrl: 'http://localhost:4000'
+  },
+  production: {
+    apiUrl: '' // TODO
+  },
 }
 
 module.exports = merge(config.all, config[config.all.env])
