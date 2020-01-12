@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/urecio/propstat/issues"
   },
-  "homepage": "https://github.com/urecio/propstat#readme"
+  "homepage": "https://github.com/urecio/propstat#readme",
+  "dependencies": {}
 }
