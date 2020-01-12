@@ -1,0 +1,36 @@
+{
+  "name": "propstat-api",
+  "homepage": "https://github.com/urecio/propstat",
+  "description": "Koa 2 API with ES6 for Propstat",
+  "keywords": [
+    "koa",
+    "koa2",
+    "boilerplate",
+    "propstat",
+    "api",
+    "es6"
+  ],
+  "repository": "git@github.com:urecio/propstat.git",
+  "author": "Propstat",
+  "license": "MIT",
+  "version": "1.4.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index",
+    "start": "cross-env NODE_ENVIRONMENT=production node index"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^4.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-respond": "^2.1.0",
+    "koa-router": "^7.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
