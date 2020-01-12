@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"it works fine\""
+    "test": "echo \"it works fine\"",
+    "db:build": "./db/build.sh",
+    "db:start": "./db/start.sh"
   },
   "repository": {
     "type": "git",
