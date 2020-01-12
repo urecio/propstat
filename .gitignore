@@ -106,3 +106,6 @@ dist
 data
 
 .DS_Store
+
+/data/nominatim/england-latest.osm.pbf
+/data/nominatim/postgresdata/*
