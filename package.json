@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"it works fine\"",
-    "db:build": "./db/build.sh",
-    "db:start": "./db/start.sh"
+    "start": "sh ./data.sh && docker-compose up -d"
   },
   "repository": {
     "type": "git",
