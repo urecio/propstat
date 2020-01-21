@@ -7,7 +7,9 @@ const search  = async (ctx) => {
   const searchQuery = ctx.query.q;
 
   if (!searchQuery) {
-    ctx.throw(400, 'Please, provide a search query');
+    ctx.status = 400;
+    ctx.body = { message: 'Please, provide a search query' };
+    return;
   }
 
   try {
