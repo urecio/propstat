@@ -15,4 +15,11 @@ By default the API server starts on port 3000, http://localhost:3000.
 
 ### Routes
 
+
+### Test
+
+In order to run the tests make sure the database is running by going to the root folder and running `npm run start`.
+
+Then to run the tests run `npm run test` from this folder.
+
 /search
