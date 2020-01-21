@@ -21,6 +21,10 @@ const ResultLlist = styled(List)`
   & > li:nth-child(even) {
     background-color: ${palette('grayscale', 1, true)}
   }
+  & > li:hover {
+    background-color: ${palette('grayscale', 2, true)}
+    cursor: pointer;
+  }
 `;
 
 class SamplePage extends React.Component {
@@ -36,7 +40,7 @@ class SamplePage extends React.Component {
 
   setGenericError(e) {
     console.error('Error', e);
-    
+    console.log('this', this);
     this.setState({
       results: [],
       error: 'Error communicating with the server'
@@ -58,16 +62,15 @@ class SamplePage extends React.Component {
       }
       
     })
-    .catch(this.setGenericError);
+    .catch((e) => { this.setGenericError(e) });
   }
 
   checkFloodzone(property) {
     // TODO: change endpoint when backend is ready
-    console.log('property', property);
     fetch(`${apiUrl}/check-if-in-floodzone?lon=${property.lon}&lat=${property.lat}`)
     .then((res) => res.json())
     .then((result) => this.setState({ error: '', selectedProperty: { display_name: property.display_name, is_on_floodzone: result.is_on_floodzone } }))
-    .catch(this.setGenericError);
+    .catch((e) => { this.setGenericError(e) });
   }
 
   render() {
