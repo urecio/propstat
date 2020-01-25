@@ -32,6 +32,7 @@ theme.fonts = {
 
 theme.sizes = {
   maxWidth: '1100px',
+  margin: '1rem',
 }
 
 export default theme
