@@ -30,7 +30,7 @@
     "koa-logger": "^3.2.0",
     "koa-respond": "^2.1.0",
     "koa-router": "^7.4.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "pg": "^7.17.1"
   },
   "devDependencies": {
